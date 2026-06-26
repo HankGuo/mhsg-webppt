@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+  <rect x="20" y="20" width="50" height="50" fill="#0f172a"/>
+  <rect x="130" y="20" width="50" height="50" fill="#0f172a"/>
+  <rect x="20" y="130" width="50" height="50" fill="#0f172a"/>
+  <rect x="85" y="85" width="30" height="30" fill="#0369a1"/>
+  <rect x="130" y="90" width="12" height="12" fill="#0f172a"/>
+  <rect x="150" y="90" width="12" height="12" fill="#0f172a"/>
+  <rect x="130" y="110" width="12" height="12" fill="#0f172a"/>
+  <rect x="150" y="110" width="12" height="12" fill="#0f172a"/>
+  <rect x="130" y="130" width="12" height="12" fill="#0f172a"/>
+  <rect x="150" y="150" width="12" height="12" fill="#0f172a"/>
+  <rect x="90" y="130" width="12" height="12" fill="#0f172a"/>
+  <rect x="110" y="150" width="12" height="12" fill="#0f172a"/>
+  <text x="100" y="185" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#64748b">替换为个人二维码</text>
+</svg>

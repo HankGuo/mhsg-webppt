@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>四种轻工具，为高效触达世界而生的瑞士军刀</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="progress-bar" id="progressBar"></div>
+  <div class="page-counter" id="pageCounter">01 / 16</div>
+  <div class="keyboard-hint"><kbd>←</kbd> <kbd>→</kbd> 翻页</div>
+
+  <button class="nav-btn prev" id="prevBtn" aria-label="上一页">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M19 12H5M12 19l-7-7 7-7" />
+    </svg>
+  </button>
+  <button class="nav-btn next" id="nextBtn" aria-label="下一页">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 12h14M12 5l7 7-7 7" />
+    </svg>
+  </button>
+
+  <div class="slides" id="slides">
+    <!-- 01 Cover -->
+    <section class="slide slide-cover" data-index="0">
+      <div class="slide-inner">
+        <div class="mondrian-bg" aria-hidden="true">
+          <div class="block red"></div>
+          <div class="block blue"></div>
+          <div class="block yellow"></div>
+          <div class="block black"></div>
+        </div>
+        <div class="content-block">
+          <h1 class="title">四种轻工具</h1>
+          <p class="subtitle">为高效触达世界而生的瑞士军刀</p>
+          <div class="knife-hero" aria-hidden="true">
+            <svg viewBox="0 0 520 220" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.12" />
+                </filter>
+              </defs>
+              <rect x="160" y="95" width="200" height="55" rx="10" fill="#1e293b" filter="url(#shadow)" />
+              <circle cx="185" cy="122" r="6" fill="#64748b" />
+              <circle cx="335" cy="122" r="6" fill="#64748b" />
+              <rect x="360" y="108" width="55" height="28" rx="4" fill="#0f172a" />
+              <rect x="130" y="60" width="18" height="95" rx="2" fill="#c41e3a" transform="rotate(-35 130 60)" />
+              <text x="95" y="50" font-family="IBM Plex Mono, monospace" font-size="11" font-weight="600" fill="#c41e3a" transform="rotate(-35 95 50)">Markdown</text>
+              <rect x="170" y="45" width="18" height="100" rx="2" fill="#0369a1" transform="rotate(-18 170 45)" />
+              <text x="155" y="32" font-family="IBM Plex Mono, monospace" font-size="11" font-weight="600" fill="#0369a1" transform="rotate(-18 155 32)">HTML</text>
+              <rect x="220" y="40" width="18" height="90" rx="2" fill="#b45309" />
+              <text x="212" y="28" font-family="IBM Plex Mono, monospace" font-size="11" font-weight="600" fill="#b45309">SVG</text>
+              <rect x="270" y="45" width="18" height="100" rx="2" fill="#0f172a" transform="rotate(18 270 45)" />
+              <text x="282" y="30" font-family="IBM Plex Mono, monospace" font-size="11" font-weight="600" fill="#0f172a" transform="rotate(18 282 30)">GitHub</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 Problem -->
+    <section class="slide slide-problem" data-index="1">
+      <div class="slide-inner split">
+        <div class="text-col">
+          <p class="eyebrow">传播困境</p>
+          <h2>想法为何死在传播前？</h2>
+          <p>不是内容不够好，而是包装太重</p>
+          <p>PPT 要下载、打开、翻页；PDF 改一次就要重发一次</p>
+          <p class="lead">一个网址，才是最轻的包装</p>
+        </div>
+        <div class="visual-col">
+          <svg viewBox="0 0 420 320" xmlns="http://www.w3.org/2000/svg">
+            <rect x="30" y="40" width="150" height="190" rx="4" fill="#fff" stroke="#94a3b8" stroke-width="1.5" />
+            <rect x="50" y="70" width="110" height="8" rx="1" fill="#0f172a" />
+            <rect x="50" y="95" width="110" height="5" rx="1" fill="#64748b" />
+            <rect x="50" y="110" width="90" height="5" rx="1" fill="#64748b" />
+            <rect x="50" y="135" width="110" height="8" rx="1" fill="#0f172a" />
+            <rect x="50" y="160" width="110" height="5" rx="1" fill="#64748b" />
+            <rect x="50" y="175" width="80" height="5" rx="1" fill="#64748b" />
+            <text x="105" y="260" text-anchor="middle" font-size="13" fill="#64748b">PPT / PDF</text>
+            <rect x="240" y="55" width="130" height="165" rx="4" fill="#fff" stroke="#c41e3a" stroke-width="2" />
+            <rect x="255" y="80" width="100" height="6" rx="1" fill="#0f172a" />
+            <rect x="255" y="105" width="100" height="4" rx="1" fill="#64748b" />
+            <rect x="255" y="120" width="80" height="4" rx="1" fill="#64748b" />
+            <rect x="255" y="145" width="100" height="6" rx="1" fill="#0f172a" />
+            <rect x="255" y="170" width="100" height="4" rx="1" fill="#64748b" />
+            <text x="305" y="250" text-anchor="middle" font-size="13" fill="#c41e3a">一个网址</text>
+            <path d="M185 135 L230 135" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="6 4" />
+            <polygon points="225,131 235,135 225,139" fill="#cbd5e1" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 One Knife -->
+    <section class="slide slide-overview" data-index="2">
+      <div class="slide-inner">
+        <div class="section-header centered">
+          <p class="eyebrow">核心观点</p>
+          <h2>三片功能刃，一个刀柄</h2>
+          <p class="section-lead">Markdown、HTML、SVG 各司其职，GitHub 握持与交付合而为一，成为高效触达世界的利刃</p>
+        </div>
+        <div class="system-diagram">
+          <div class="system-center">
+            <span class="system-label">被看见</span>
+            <span class="system-sub">一个网址</span>
+          </div>
+          <div class="system-edges" aria-hidden="true">
+            <svg viewBox="0 0 800 360" xmlns="http://www.w3.org/2000/svg">
+              <line x1="400" y1="180" x2="170" y2="80" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="6 4" />
+              <line x1="400" y1="180" x2="170" y2="280" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="6 4" />
+              <line x1="400" y1="180" x2="630" y2="80" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="6 4" />
+              <line x1="400" y1="180" x2="630" y2="280" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="6 4" />
+              <circle cx="170" cy="80" r="6" fill="#c41e3a" />
+              <circle cx="170" cy="280" r="6" fill="#0369a1" />
+              <circle cx="630" cy="80" r="6" fill="#b45309" />
+              <circle cx="630" cy="280" r="6" fill="#0f172a" />
+            </svg>
+          </div>
+          <div class="system-nodes">
+            <div class="system-node" data-tool="markdown">
+              <span class="node-num">结构之刃</span>
+              <h3>Markdown</h3>
+              <p>定义骨架</p>
+            </div>
+            <div class="system-node" data-tool="html">
+              <span class="node-num">呈现之刃</span>
+              <h3>HTML</h3>
+              <p>塑造形态</p>
+            </div>
+            <div class="system-node" data-tool="svg">
+              <span class="node-num">图形之刃</span>
+              <h3>SVG</h3>
+              <p>绘制视觉</p>
+            </div>
+            <div class="system-node" data-tool="github">
+              <span class="node-num">刀柄</span>
+              <h3>GitHub</h3>
+              <p>握持与交付</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 Old Tools -->
+    <section class="slide slide-timeline" data-index="3">
+      <div class="slide-inner">
+        <div class="section-header centered">
+          <h2>老工具，新锋利</h2>
+          <p class="section-lead">它们诞生于 AI 时代之前，却在今天被重新激活</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="year">1993</span>
+            <span class="tool">HTML</span>
+            <span class="note">30 年 +</span>
+          </div>
+          <div class="timeline-item">
+            <span class="year">1998</span>
+            <span class="tool">SVG</span>
+            <span class="note">25 年 +</span>
+          </div>
+          <div class="timeline-item">
+            <span class="year">2004</span>
+            <span class="tool">Markdown</span>
+            <span class="note">20 年 +</span>
+          </div>
+          <div class="timeline-item">
+            <span class="year">2008</span>
+            <span class="tool">GitHub</span>
+            <span class="note">18 年 +</span>
+          </div>
+        </div>
+        <p class="timeline-caption">最年轻 GitHub 也已成年；AI 让它们不再是程序员专属</p>
+      </div>
+    </section>
+
+    <!-- 05 Markdown Intro -->
+    <section class="slide slide-tool" data-tool="markdown" data-index="4">
+      <div class="slide-inner split">
+        <div class="text-col">
+          <div class="tool-tag" style="--tool-color: #c41e3a;">结构之刃 / Markdown</div>
+          <h2>AI 协作的默认结构约定</h2>
+          <p>它不是一门编程语言，而是一种大家约定好的沟通方式</p>
+          <p>标题、列表、层级、重点，用几个简单符号就能表达清楚</p>
+          <p>结构化，但不笨重；随处可写，没有任何软件依赖</p>
+          <p class="lead">从提示词到文档，从 agent 内置说明到 skill.md，整个行业都在用它</p>
+        </div>
+        <div class="visual-col">
+          <svg viewBox="0 0 420 320" xmlns="http://www.w3.org/2000/svg">
+            <rect x="40" y="40" width="340" height="240" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1.5" />
+            <rect x="60" y="70" width="90" height="8" rx="1" fill="#0f172a" />
+            <rect x="60" y="95" width="220" height="5" rx="1" fill="#64748b" />
+            <rect x="60" y="110" width="200" height="5" rx="1" fill="#64748b" />
+            <rect x="60" y="135" width="80" height="8" rx="1" fill="#0f172a" />
+            <rect x="80" y="160" width="180" height="5" rx="1" fill="#64748b" />
+            <rect x="80" y="175" width="160" height="5" rx="1" fill="#64748b" />
+            <rect x="60" y="200" width="80" height="8" rx="1" fill="#0f172a" />
+            <rect x="80" y="225" width="150" height="5" rx="1" fill="#64748b" />
+            <text x="370" y="70" font-family="IBM Plex Mono, monospace" font-size="42" font-weight="700" fill="#c41e3a">M</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 Markdown Source -->
+    <section class="slide slide-comparison markdown-layout" data-index="5">
+      <div class="slide-inner">
+        <div class="section-header centered">
+          <div class="tool-tag" style="--tool-color: #c41e3a;">结构之刃 / Markdown</div>
+          <h2>Markdown：结构化的表达方式</h2>
+          <p class="section-lead">它不是一门语言，而是一种约定；用简单符号表达层级、重点与顺序，任何工具都能读懂</p>
+        </div>
+        <div class="comparison">
+          <div class="panel source">
+            <div class="panel-header">
+              <span class="panel-label">源码</span>
+            </div>
+            <pre><code># 产品服务页
+
+## 核心价值
+- 用**一句话**说清你能解决什么问题
+- 提供明确的行动入口
+
+## 内容结构
+1. 主标题与副标题
+2. 服务介绍
+3. 客户案例
+4. [立即预约](contact)</code></pre>
+          </div>
+          <div class="panel preview">
+            <div class="panel-header">
+              <span class="panel-label">渲染</span>
+            </div>
+            <div class="preview-body">
+              <h4>产品服务页</h4>
+              <h5>核心价值</h5>
+              <ul>
+                <li>用<strong>一句话</strong>说清你能解决什么问题</li>
+                <li>提供明确的行动入口</li>
+              </ul>
+              <h5>内容结构</h5>
+              <ol>
+                <li>主标题与副标题</li>
+                <li>服务介绍</li>
+                <li>客户案例</li>
+                <li><a href="#" style="color:var(--cta);">立即预约</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 Markdown AI Native -->
+    <section class="slide slide-tool" data-tool="markdown" data-index="6">
+      <div class="slide-inner">
+        <div class="section-header centered">
+          <div class="tool-tag" style="--tool-color: #c41e3a;">结构之刃 / Markdown</div>
+          <h2>为什么 AI 偏爱 Markdown？</h2>
+        </div>
+        <div class="point-flow">
+          <div class="point-step">
+            <span class="point-num">01</span>
+            <h3>结构化输出</h3>
+            <p>AI 天然适合输出标题、列表、层级；Markdown 是这种结构的最小载体</p>
+          </div>
+          <div class="point-arrow">→</div>
+          <div class="point-step">
+            <span class="point-num">02</span>
+            <h3>提示词标准</h3>
+            <p>优秀提示词、agent 文档、skill.md 几乎都用 Markdown；它是 AI 协作的默认格式</p>
+          </div>
+          <div class="point-arrow">→</div>
+          <div class="point-step">
+            <span class="point-num">03</span>
+            <h3>转换友好</h3>
+            <p>Markdown 可以一键转成 HTML、PDF、PPT、公众号；一次编写，多处复用</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08 HTML Source -->
+    <section class="slide slide-comparison html-layout" data-index="7">
+      <div class="slide-inner">
+        <div class="section-header centered">
+          <div class="tool-tag" style="--tool-color: #0369a1;">呈现之刃 / HTML</div>
+          <h2>HTML：让内容拥有形态</h2>
+          <p class="section-lead">在 Markdown 的结构之上，定义颜色、排版与交互；一段文字由此变成可被浏览的页面</p>
+        </div>
+        <div class="comparison">
+          <div class="panel source">
+            <div class="panel-header">
+              <span class="panel-label">源码</span>
+            </div>
+            <pre><code>&lt;h1&gt;产品服务页&lt;/h1&gt;
+&lt;p&gt;一句话说清价值&lt;/p&gt;
+
+&lt;img src="cover.png"&gt;
+
+&lt;button&gt;立即预约&lt;/button&gt;</code></pre>
+          </div>
+          <div class="panel preview">
+            <div class="panel-header">
+              <span class="panel-label">渲染</span>
+            </div>
+            <div class="preview-body html-preview">
+              <h1 style="font-size:1.25rem;margin-bottom:0.5rem;">产品服务页</h1>
+              <p style="margin-bottom:0.75rem;color:var(--text-secondary);font-size:0.9rem;">一句话说清价值</p>
+              <div style="width:100%;height:55px;background:#e0f2fe;border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--blue);font-size:0.8rem;margin-bottom:0.75rem;">封面图片</div>
+              <button style="padding:0.5rem 1.1rem;background:var(--cta);color:#fff;border:none;border-radius:6px;font-size:0.8rem;font-weight:600;cursor:pointer;">立即预约</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 09 HTML Rich Media -->
+    <section class="slide slide-html-media" data-index="8">
+      <div class="slide-inner">
+        <div class="section-header centered">
+          <div class="tool-tag" style="--tool-color: #0369a1;">呈现之刃 / HTML</div>
+          <h2>HTML 能承载什么？</h2>
+          <p class="section-lead">文字、颜色、图片、音频、视频、交互，全部集中在一处</p>
+        </div>
+        <div class="media-grid">
+          <div class="media-card">
+            <span class="media-icon">T</span>
+            <h3>文字与排版</h3>
+            <p>标题、段落、列表、引用，层级清晰</p>
+          </div>
+          <div class="media-card">
+            <span class="media-icon">I</span>
+            <h3>图片与色彩</h3>
+            <p>品牌色、配图、图标，视觉统一</p>
+          </div>
+          <div class="media-card">
+            <span class="media-icon">V</span>
+            <h3>音视频</h3>
+            <p>嵌入演示视频、播客、访谈片段</p>
+          </div>
+          <div class="media-card">
+            <span class="media-icon">⌥</span>
+            <h3>交互</h3>
+            <p>按钮、表单、折叠、滑动，读者可以参与</p>
+          </div>
+        </div>
+        <div class="media-browser">
+          <div class="browser-mockup large">
+            <div class="browser-header">
+              <span></span><span></span><span></span>
+              <div class="browser-url">your-idea.github.io</div>
+            </div>
+            <div class="browser-body media-body">
+              <h4>产品服务页</h4>
+              <div class="media-blocks">
+                <div class="media-block text">简介</div>
+                <div class="media-block image">图</div>
+                <div class="media-block video">视频</div>
+                <div class="media-block cta">立即预约</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10 SVG Intro -->
+    <section class="slide slide-tool" data-tool="svg" data-index="9">
+      <div class="slide-inner split reverse">
+        <div class="visual-col">
+          <svg viewBox="0 0 420 320" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="210" cy="160" r="120" fill="#fffbeb" />
+            <rect x="150" y="120" width="70" height="70" rx="8" fill="#b45309" opacity="0.9" />
+            <circle cx="280" cy="150" r="35" fill="#0369a1" opacity="0.9" />
+            <polygon points="195,215 245,215 220,270" fill="#0f172a" opacity="0.9" />
+            <rect x="130" y="190" width="50" height="12" rx="2" fill="#0f172a" transform="rotate(-15 155 196)" />
+            <text x="350" y="70" font-family="IBM Plex Mono, monospace" font-size="42" font-weight="700" fill="#b45309">S</text>
+          </svg>
+        </div>
+        <div class="text-col">
+          <div class="tool-tag" style="--tool-color: #b45309;">图形之刃 / SVG</div>
+          <h2>图像表达，永远比文字更直观</h2>
+          <p>流程、关系、对比、数据，一张图胜过千言</p>
+          <p>SVG 用代码描述图形，生成简单；矢量格式，无限缩放都不模糊；自主绘制，没有版权风险</p>
+          <p class="lead">AI 让每个人都能拥有即时的视觉表达力</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11 SVG Source -->
+    <section class="slide slide-comparison svg-layout" data-index="10">
+      <div class="slide-inner">
+        <div class="section-header centered">
+          <div class="tool-tag" style="--tool-color: #b45309;">图形之刃 / SVG</div>
+          <h2>SVG：用代码绘制视觉</h2>
+          <p class="section-lead">用坐标和形状描述画面，缩放不糊，修改即改；从流程图到图标，都能一手掌控</p>
+        </div>
+        <div class="comparison">
+          <div class="panel source">
+            <div class="panel-header">
+              <span class="panel-label">源码</span>
+            </div>
+            <pre><code>&lt;svg viewBox="0 0 200 120"&gt;
+  &lt;rect x="20" y="40" width="50" height="40" fill="#f1f5f9" /&gt;
+  &lt;text x="45" y="65"&gt;输入&lt;/text&gt;
+  &lt;path d="M75 60 H100" /&gt;
+  &lt;rect x="110" y="40" width="70" height="40" fill="#e0f2fe" /&gt;
+  &lt;text x="145" y="65"&gt;处理&lt;/text&gt;
+&lt;/svg&gt;</code></pre>
+          </div>
+          <div class="panel preview">
+            <div class="panel-header">
+              <span class="panel-label">渲染</span>
+            </div>
+            <div class="preview-body svg-preview">
+              <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:260px;height:auto;">
+                <rect x="20" y="40" width="50" height="40" rx="4" fill="#f1f5f9" stroke="#0f172a" />
+                <text x="45" y="65" text-anchor="middle" font-size="10" fill="#0f172a">输入</text>
+                <path d="M75 60 H100" stroke="#94a3b8" marker-end="url(#arrow)" />
+                <rect x="110" y="40" width="70" height="40" rx="4" fill="#e0f2fe" stroke="#0369a1" />
+                <text x="145" y="65" text-anchor="middle" font-size="10" fill="#0369a1">处理</text>
+                <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="#94a3b8" /></marker></defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12 GitHub Intro -->
+    <section class="slide slide-tool" data-tool="github" data-index="11">
+      <div class="slide-inner split">
+        <div class="text-col">
+          <div class="tool-tag" style="--tool-color: #0f172a;">刀柄 / GitHub</div>
+          <h2>存储、展示与复用</h2>
+          <p>它不只是代码仓库，更是创作者的公共工作台</p>
+          <p>文件存放、全球访问、版本管理、参考借鉴，四件事在一个平台完成</p>
+          <p class="lead">GitHub 把你的本地文件，变成世界可见的作品</p>
+        </div>
+        <div class="visual-col">
+          <div class="github-card">
+            <div class="github-header">
+              <div class="github-avatar">YOU</div>
+              <div class="github-info">
+                <span class="github-name">your-idea</span>
+                <span class="github-desc">公开作品集 · 持续更新中</span>
+              </div>
+            </div>
+            <div class="github-contributions">
+              <span class="contrib-title">产出记录</span>
+              <div class="contrib-grid" aria-hidden="true">
+                <div class="contrib-week">
+                  <span class="contrib-day level-1"></span><span class="contrib-day level-2"></span><span class="contrib-day level-3"></span><span class="contrib-day level-1"></span><span class="contrib-day level-0"></span><span class="contrib-day level-2"></span><span class="contrib-day level-1"></span>
+                </div>
+                <div class="contrib-week">
+                  <span class="contrib-day level-2"></span><span class="contrib-day level-3"></span><span class="contrib-day level-4"></span><span class="contrib-day level-2"></span><span class="contrib-day level-1"></span><span class="contrib-day level-3"></span><span class="contrib-day level-2"></span>
+                </div>
+                <div class="contrib-week">
+                  <span class="contrib-day level-1"></span><span class="contrib-day level-0"></span><span class="contrib-day level-2"></span><span class="contrib-day level-3"></span><span class="contrib-day level-2"></span><span class="contrib-day level-4"></span><span class="contrib-day level-3"></span>
+                </div>
+                <div class="contrib-week">
+                  <span class="contrib-day level-3"></span><span class="contrib-day level-2"></span><span class="contrib-day level-1"></span><span class="contrib-day level-0"></span><span class="contrib-day level-2"></span><span class="contrib-day level-3"></span><span class="contrib-day level-2"></span>
+                </div>
+                <div class="contrib-week">
+                  <span class="contrib-day level-2"></span><span class="contrib-day level-4"></span><span class="contrib-day level-3"></span><span class="contrib-day level-2"></span><span class="contrib-day level-1"></span><span class="contrib-day level-2"></span><span class="contrib-day level-1"></span>
+                </div>
+                <div class="contrib-week">
+                  <span class="contrib-day level-1"></span><span class="contrib-day level-2"></span><span class="contrib-day level-1"></span><span class="contrib-day level-3"></span><span class="contrib-day level-4"></span><span class="contrib-day level-3"></span><span class="contrib-day level-2"></span>
+                </div>
+                <div class="contrib-week">
+                  <span class="contrib-day level-0"></span><span class="contrib-day level-1"></span><span class="contrib-day level-2"></span><span class="contrib-day level-1"></span><span class="contrib-day level-2"></span><span class="contrib-day level-1"></span><span class="contrib-day level-0"></span>
+                </div>
+                <div class="contrib-week">
+                  <span class="contrib-day level-2"></span><span class="contrib-day level-3"></span><span class="contrib-day level-2"></span><span class="contrib-day level-1"></span><span class="contrib-day level-0"></span><span class="contrib-day level-1"></span><span class="contrib-day level-2"></span>
+                </div>
+                <div class="contrib-week">
+                  <span class="contrib-day level-3"></span><span class="contrib-day level-4"></span><span class="contrib-day level-3"></span><span class="contrib-day level-2"></span><span class="contrib-day level-3"></span><span class="contrib-day level-2"></span><span class="contrib-day level-1"></span>
+                </div>
+                <div class="contrib-week">
+                  <span class="contrib-day level-1"></span><span class="contrib-day level-2"></span><span class="contrib-day level-1"></span><span class="contrib-day level-3"></span><span class="contrib-day level-2"></span><span class="contrib-day level-1"></span><span class="contrib-day level-2"></span>
+                </div>
+                <div class="contrib-week">
+                  <span class="contrib-day level-2"></span><span class="contrib-day level-1"></span><span class="contrib-day level-3"></span><span class="contrib-day level-4"></span><span class="contrib-day level-3"></span><span class="contrib-day level-2"></span><span class="contrib-day level-3"></span>
+                </div>
+                <div class="contrib-week">
+                  <span class="contrib-day level-1"></span><span class="contrib-day level-2"></span><span class="contrib-day level-1"></span><span class="contrib-day level-0"></span><span class="contrib-day level-1"></span><span class="contrib-day level-2"></span><span class="contrib-day level-1"></span>
+                </div>
+              </div>
+              <div class="contrib-legend">
+                <span>少</span>
+                <span class="legend-day level-0"></span>
+                <span class="legend-day level-1"></span>
+                <span class="legend-day level-2"></span>
+                <span class="legend-day level-3"></span>
+                <span class="legend-day level-4"></span>
+                <span>多</span>
+              </div>
+            </div>
+            <div class="github-stats">
+              <div class="github-stat"><strong>12</strong><span>Projects</span></div>
+              <div class="github-stat"><strong>48</strong><span>Commits</span></div>
+              <div class="github-stat"><strong>1</strong><span>URL</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13 Workflow -->
+    <section class="slide slide-workflow" data-index="12">
+      <div class="slide-inner">
+        <div class="section-header centered">
+          <h2>从想法到网址的完整路径</h2>
+        </div>
+        <div class="workflow">
+          <div class="workflow-step" data-tool="markdown">
+            <span class="step-icon">M</span>
+            <h3>Markdown</h3>
+            <p>梳理结构</p>
+          </div>
+          <div class="workflow-arrow">→</div>
+          <div class="workflow-step" data-tool="html">
+            <span class="step-icon">H</span>
+            <h3>HTML</h3>
+            <p>生成页面</p>
+          </div>
+          <div class="workflow-arrow">→</div>
+          <div class="workflow-step" data-tool="svg">
+            <span class="step-icon">S</span>
+            <h3>SVG</h3>
+            <p>补充图形</p>
+          </div>
+          <div class="workflow-arrow">→</div>
+          <div class="workflow-step" data-tool="github">
+            <span class="step-icon">G</span>
+            <h3>GitHub</h3>
+            <p>发布上线</p>
+          </div>
+        </div>
+        <p class="workflow-note">循环：根据反馈继续用 Markdown 改结构，用 HTML 改呈现，用 SVG 补图，用 GitHub 迭代发布</p>
+      </div>
+    </section>
+
+    <!-- 14 Before After -->
+    <section class="slide slide-before-after" data-index="13">
+      <div class="slide-inner">
+        <div class="section-header centered">
+          <h2>同一份内容，两种不同的命运</h2>
+        </div>
+        <div class="before-after">
+          <div class="ba-panel before">
+            <div class="ba-header">
+              <span>Before</span>
+            </div>
+            <div class="ba-body">
+              <div class="ba-doc">
+                <div class="ba-line" style="width: 70%"></div>
+                <div class="ba-line" style="width: 90%"></div>
+                <div class="ba-line" style="width: 85%"></div>
+                <div class="ba-line" style="width: 60%"></div>
+                <div class="ba-line" style="width: 80%"></div>
+                <div class="ba-line" style="width: 75%"></div>
+                <div class="ba-line" style="width: 90%"></div>
+              </div>
+              <p class="ba-caption">Word 文档或长段文字，读者看一眼就关掉</p>
+            </div>
+          </div>
+          <div class="ba-panel after">
+            <div class="ba-header">
+              <span>After</span>
+            </div>
+            <div class="ba-body">
+              <div class="ba-browser">
+                <h5>客户入职流程</h5>
+                <div class="ba-section red">签约阶段</div>
+                <div class="ba-section blue">账号创建</div>
+                <div class="ba-section yellow">培训</div>
+              </div>
+              <p class="ba-caption">结构化网页，手机可看，分享即用</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 15 URL vs PPT -->
+    <section class="slide slide-url" data-index="14">
+      <div class="slide-inner centered">
+        <p class="eyebrow">传播效率</p>
+        <h2>为什么网址胜过 PPT？</h2>
+        <div class="url-bento">
+          <div class="url-item wide">
+            <span class="url-check">✓</span>
+            <h3>无需下载</h3>
+            <p>点开即看，没有打开成本手机、电脑、平板一致体验</p>
+          </div>
+          <div class="url-item">
+            <span class="url-check">✓</span>
+            <h3>随时更新</h3>
+            <p>改完即生效，不用重新发送文件</p>
+          </div>
+          <div class="url-item">
+            <span class="url-check">✓</span>
+            <h3>全域传播</h3>
+            <p>微信、邮件、社群、二维码，一处发布，处处可达</p>
+          </div>
+          <div class="url-item wide">
+            <span class="url-check">✓</span>
+            <h3>沉淀资产</h3>
+            <p>每次迭代都有记录，形成可复用的个人知识库与作品集</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 16 Closing -->
+    <section class="slide slide-end" data-index="15">
+      <div class="slide-inner centered">
+        <p class="eyebrow">感谢聆听</p>
+        <h2>不要等完美</h2>
+        <div class="takeaway">
+          <p>三片功能刃，一个刀柄</p>
+          <p>用 Markdown 想清楚，用 HTML 做出来，用 SVG 画出来，用 GitHub 发出去</p>
+        </div>
+        <div class="contact-row">
+          <div class="contact-item">
+            <div class="contact-frame">
+              <img src="assets/qrcode-placeholder.svg" alt="个人二维码" />
+            </div>
+            <span class="contact-label">扫码交流</span>
+          </div>
+        </div>
+        <p class="closing">让世界看到你</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
