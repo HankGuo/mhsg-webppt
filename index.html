@@ -120,42 +120,42 @@
       <div class="slide-inner centered">
         <p class="eyebrow">今天的工具</p>
         <h2>三片刃 + 一个刀柄</h2>
-        <!-- SVG折线时间轴 -->
-        <svg viewBox="0 0 800 280" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:850px;margin-top:2rem;">
-          <!-- 折线路径 -->
-          <polyline points="100,180 280,120 500,80 700,40" fill="none" stroke="url(#timeline-grad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        <!-- 横线时间轴 -->
+        <svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:900px;margin-top:2.5rem;">
           <defs>
-            <linearGradient id="timeline-grad" x1="0" y1="0" x2="1" y2="0">
+            <linearGradient id="tl-grad" x1="0" y1="0" x2="1" y2="0">
               <stop offset="0%" stop-color="#0369a1" />
-              <stop offset="35%" stop-color="#b45309" />
-              <stop offset="65%" stop-color="#c41e3a" />
+              <stop offset="40%" stop-color="#b45309" />
+              <stop offset="70%" stop-color="#c41e3a" />
               <stop offset="100%" stop-color="#1e293b" />
             </linearGradient>
           </defs>
-          <!-- 节点1: 1993 HTML -->
-          <circle cx="100" cy="180" r="10" fill="#0369a1" />
-          <circle cx="100" cy="180" r="5" fill="#fff" />
-          <text x="100" y="210" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="22" font-weight="700" fill="#0369a1">1993</text>
-          <text x="100" y="232" text-anchor="middle" font-size="14" font-weight="600" fill="#0f172a">HTML</text>
-          <text x="100" y="250" text-anchor="middle" font-size="11" fill="#64748b">网页的底层语言</text>
-          <!-- 节点2: 2001 SVG -->
-          <circle cx="280" cy="120" r="10" fill="#b45309" />
-          <circle cx="280" cy="120" r="5" fill="#fff" />
-          <text x="280" y="150" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="22" font-weight="700" fill="#b45309">2001</text>
-          <text x="280" y="172" text-anchor="middle" font-size="14" font-weight="600" fill="#0f172a">SVG</text>
-          <text x="280" y="190" text-anchor="middle" font-size="11" fill="#64748b">放多大都不糊的图</text>
-          <!-- 节点3: 2004 Markdown -->
-          <circle cx="500" cy="80" r="10" fill="#c41e3a" />
-          <circle cx="500" cy="80" r="5" fill="#fff" />
-          <text x="500" y="110" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="22" font-weight="700" fill="#c41e3a">2004</text>
-          <text x="500" y="132" text-anchor="middle" font-size="14" font-weight="600" fill="#0f172a">Markdown</text>
-          <text x="500" y="150" text-anchor="middle" font-size="11" fill="#64748b">结构化的写作方式</text>
-          <!-- 节点4: 2008 GitHub -->
-          <circle cx="700" cy="40" r="10" fill="#1e293b" />
-          <circle cx="700" cy="40" r="5" fill="#fff" />
-          <text x="700" y="70" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="22" font-weight="700" fill="#1e293b">2008</text>
-          <text x="700" y="92" text-anchor="middle" font-size="14" font-weight="600" fill="#0f172a">GitHub</text>
-          <text x="700" y="110" text-anchor="middle" font-size="11" fill="#64748b">全世界的代码仓库</text>
+          <!-- 主线 -->
+          <line x1="60" y1="80" x2="740" y2="80" stroke="url(#tl-grad)" stroke-width="4" stroke-linecap="round" />
+          <!-- 1993 HTML -->
+          <circle cx="120" cy="80" r="14" fill="#0369a1" />
+          <circle cx="120" cy="80" r="6" fill="#fff" />
+          <text x="120" y="55" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="24" font-weight="700" fill="#0369a1">1993</text>
+          <text x="120" y="115" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">HTML</text>
+          <text x="120" y="138" text-anchor="middle" font-size="12" fill="#64748b">网页的底层语言</text>
+          <!-- 2001 SVG -->
+          <circle cx="320" cy="80" r="14" fill="#b45309" />
+          <circle cx="320" cy="80" r="6" fill="#fff" />
+          <text x="320" y="55" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="24" font-weight="700" fill="#b45309">2001</text>
+          <text x="320" y="115" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">SVG</text>
+          <text x="320" y="138" text-anchor="middle" font-size="12" fill="#64748b">放多大都不糊的图</text>
+          <!-- 2004 Markdown -->
+          <circle cx="520" cy="80" r="14" fill="#c41e3a" />
+          <circle cx="520" cy="80" r="6" fill="#fff" />
+          <text x="520" y="55" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="24" font-weight="700" fill="#c41e3a">2004</text>
+          <text x="520" y="115" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">Markdown</text>
+          <text x="520" y="138" text-anchor="middle" font-size="12" fill="#64748b">结构化的写作方式</text>
+          <!-- 2008 GitHub -->
+          <circle cx="680" cy="80" r="14" fill="#1e293b" />
+          <circle cx="680" cy="80" r="6" fill="#fff" />
+          <text x="680" y="55" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="24" font-weight="700" fill="#1e293b">2008</text>
+          <text x="680" y="115" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">GitHub</text>
+          <text x="680" y="138" text-anchor="middle" font-size="12" fill="#64748b">全世界的代码仓库</text>
         </svg>
         <p class="section-lead" style="text-align:center;margin-top:2rem;">曾经程序员专属，今天被 AI 重新激活——你只需认识它们，然后让 AI 去执行</p>
       </div>
@@ -624,26 +624,32 @@
           <h2>想法→网址，四步搞定</h2>
         </div>
         <div class="workflow">
-          <div class="workflow-step" data-tool="markdown">
-            <span class="step-icon">M</span>
+          <div class="workflow-step" data-tool="markdown" style="background:linear-gradient(145deg,#fff5f5,#fff);box-shadow:0 4px 20px rgba(196,30,58,0.08);">
+            <span class="step-icon" style="background:linear-gradient(135deg,#c41e3a,#e11d48);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:2rem;">M</span>
             <h3>Markdown</h3>
             <p>梳理结构</p>
           </div>
-          <div class="workflow-arrow">→</div>
-          <div class="workflow-step" data-tool="html">
-            <span class="step-icon">H</span>
+          <div class="workflow-arrow">
+            <svg width="32" height="16" viewBox="0 0 32 16"><path d="M0,8 L24,8 M18,2 L26,8 L18,14" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="workflow-step" data-tool="html" style="background:linear-gradient(145deg,#eff6ff,#fff);box-shadow:0 4px 20px rgba(3,105,161,0.08);">
+            <span class="step-icon" style="background:linear-gradient(135deg,#0369a1,#0ea5e9);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:2rem;">H</span>
             <h3>HTML</h3>
             <p>生成页面</p>
           </div>
-          <div class="workflow-arrow">→</div>
-          <div class="workflow-step" data-tool="svg">
-            <span class="step-icon">S</span>
+          <div class="workflow-arrow">
+            <svg width="32" height="16" viewBox="0 0 32 16"><path d="M0,8 L24,8 M18,2 L26,8 L18,14" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="workflow-step" data-tool="svg" style="background:linear-gradient(145deg,#fffbeb,#fff);box-shadow:0 4px 20px rgba(180,83,9,0.08);">
+            <span class="step-icon" style="background:linear-gradient(135deg,#b45309,#f59e0b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:2rem;">S</span>
             <h3>SVG</h3>
             <p>补充图形</p>
           </div>
-          <div class="workflow-arrow">→</div>
-          <div class="workflow-step" data-tool="github">
-            <span class="step-icon">G</span>
+          <div class="workflow-arrow">
+            <svg width="32" height="16" viewBox="0 0 32 16"><path d="M0,8 L24,8 M18,2 L26,8 L18,14" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="workflow-step" data-tool="github" style="background:linear-gradient(145deg,#f1f5f9,#fff);box-shadow:0 4px 20px rgba(15,23,42,0.1);">
+            <span class="step-icon" style="background:linear-gradient(135deg,#1e293b,#475569);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:2rem;">G</span>
             <h3>GitHub</h3>
             <p>发布上线</p>
           </div>

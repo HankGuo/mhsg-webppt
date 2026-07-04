@@ -1503,12 +1503,23 @@ code {
 .ba-panel {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.ba-panel.before {
+  background: linear-gradient(180deg, #fff 0%, #fef2f2 100%);
+  border-color: #fecaca;
+}
+
+.ba-panel.after {
+  background: linear-gradient(180deg, #fff 0%, #f0fdf4 100%);
+  border-color: #bbf7d0;
 }
 
 .ba-header {
-  padding: 0.875rem 1rem;
+  padding: 1rem 1.2rem;
   background: #f1f5f9;
   border-bottom: 1px solid var(--border);
 }
@@ -1631,26 +1642,28 @@ code {
 .url-bento {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.25rem;
-  max-width: 800px;
+  gap: 1.5rem;
+  max-width: 100%;
   margin: 2.5rem auto 0;
 }
 
 .url-item {
   text-align: left;
-  padding: 1.75rem;
-  background: var(--surface);
+  padding: 2rem;
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
   border: 1px solid var(--border);
-  border-radius: 12px;
-  transition: transform 0.25s ease;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .url-item:hover {
   transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
 }
 
 .url-item.wide {
-  background: #f0f9ff;
+  background: linear-gradient(145deg, #f0f9ff, #e0f2fe);
   border-color: #bae6fd;
 }
 
@@ -1658,25 +1671,27 @@ code {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
-  background: #f0fdf4;
+  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
   color: #16a34a;
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(22,163,74,0.15);
 }
 
 .url-item h3 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 0.4rem;
 }
 
 .url-item p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--text-secondary);
   margin: 0;
+  line-height: 1.5;
 }
 
 /* End */
