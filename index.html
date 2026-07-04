@@ -622,47 +622,53 @@
     <section class="slide" data-index="11">
       <div class="slide-inner centered">
         <h2>想法→网址，四步搞定</h2>
-        <svg viewBox="0 0 900 240" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:100%;margin-top:2rem;">
-          <defs>
-            <linearGradient id="wf-line" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0%" stop-color="#c41e3a"/>
-              <stop offset="33%" stop-color="#0369a1"/>
-              <stop offset="66%" stop-color="#b45309"/>
-              <stop offset="100%" stop-color="#0f172a"/>
-            </linearGradient>
-          </defs>
-          <!-- 连接线 -->
-          <line x1="165" y1="70" x2="735" y2="70" stroke="url(#wf-line)" stroke-width="3" stroke-linecap="round"/>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:2rem;width:100%;">
           <!-- Step 1 -->
-          <circle cx="165" cy="70" r="36" fill="#fff" stroke="#c41e3a" stroke-width="3"/>
-          <text x="165" y="64" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="22" font-weight="700" fill="#c41e3a">M</text>
-          <text x="165" y="82" text-anchor="middle" font-size="8" fill="#64748b">Markdown</text>
-          <text x="165" y="125" text-anchor="middle" font-size="14" font-weight="600" fill="#0f172a">梳理结构</text>
-          <text x="165" y="145" text-anchor="middle" font-size="11" fill="#64748b">把想法写清楚</text>
+          <div style="border-radius:14px;border:2px solid #c41e3a;padding:1.5rem 1.2rem;text-align:center;background:linear-gradient(180deg,#fff5f5,#fff);">
+            <span style="display:inline-block;width:48px;height:48px;line-height:48px;border-radius:50%;background:#c41e3a;color:#fff;font-family:var(--mono);font-size:1.3rem;font-weight:700;">M</span>
+            <h3 style="font-size:1rem;margin:0.8rem 0 0.3rem;">梳理结构</h3>
+            <p style="font-size:0.8rem;color:#64748b;margin:0 0 0.8rem;">用 Markdown 把想法写成有层级的文档</p>
+            <div style="background:#f8fafc;border-radius:8px;padding:0.6rem;font-family:var(--mono);font-size:0.6rem;color:#334155;text-align:left;line-height:1.6;">
+              # 我的课程<br/> ## 学什么<br/> ## 谁适合<br/> ## 怎么报名
+            </div>
+          </div>
           <!-- Step 2 -->
-          <circle cx="355" cy="70" r="36" fill="#fff" stroke="#0369a1" stroke-width="3"/>
-          <text x="355" y="64" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="22" font-weight="700" fill="#0369a1">H</text>
-          <text x="355" y="82" text-anchor="middle" font-size="8" fill="#64748b">HTML</text>
-          <text x="355" y="125" text-anchor="middle" font-size="14" font-weight="600" fill="#0f172a">生成页面</text>
-          <text x="355" y="145" text-anchor="middle" font-size="11" fill="#64748b">AI 帮你做网页</text>
+          <div style="border-radius:14px;border:2px solid #0369a1;padding:1.5rem 1.2rem;text-align:center;background:linear-gradient(180deg,#eff6ff,#fff);">
+            <span style="display:inline-block;width:48px;height:48px;line-height:48px;border-radius:50%;background:#0369a1;color:#fff;font-family:var(--mono);font-size:1.3rem;font-weight:700;">H</span>
+            <h3 style="font-size:1rem;margin:0.8rem 0 0.3rem;">生成页面</h3>
+            <p style="font-size:0.8rem;color:#64748b;margin:0 0 0.8rem;">AI 把 Markdown 变成带设计的 HTML 网页</p>
+            <div style="background:#f8fafc;border-radius:8px;padding:0.6rem;font-size:0.6rem;color:#334155;text-align:left;">
+              <div style="height:10px;width:100%;background:linear-gradient(90deg,#0369a1,#0ea5e9);border-radius:3px;margin-bottom:4px;"></div>
+              <div style="height:6px;width:70%;background:#e2e8f0;border-radius:2px;margin-bottom:3px;"></div>
+              <div style="height:6px;width:85%;background:#e2e8f0;border-radius:2px;margin-bottom:3px;"></div>
+              <div style="height:14px;width:50%;background:#c41e3a;border-radius:4px;margin-top:6px;"></div>
+            </div>
+          </div>
           <!-- Step 3 -->
-          <circle cx="545" cy="70" r="36" fill="#fff" stroke="#b45309" stroke-width="3"/>
-          <text x="545" y="64" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="22" font-weight="700" fill="#b45309">S</text>
-          <text x="545" y="82" text-anchor="middle" font-size="8" fill="#64748b">SVG</text>
-          <text x="545" y="125" text-anchor="middle" font-size="14" font-weight="600" fill="#0f172a">补充图形</text>
-          <text x="545" y="145" text-anchor="middle" font-size="11" fill="#64748b">让页面更专业</text>
+          <div style="border-radius:14px;border:2px solid #b45309;padding:1.5rem 1.2rem;text-align:center;background:linear-gradient(180deg,#fffbeb,#fff);">
+            <span style="display:inline-block;width:48px;height:48px;line-height:48px;border-radius:50%;background:#b45309;color:#fff;font-family:var(--mono);font-size:1.3rem;font-weight:700;">S</span>
+            <h3 style="font-size:1rem;margin:0.8rem 0 0.3rem;">补充图形</h3>
+            <p style="font-size:0.8rem;color:#64748b;margin:0 0 0.8rem;">让 AI 画图表、Logo、图标，插入页面</p>
+            <div style="background:#f8fafc;border-radius:8px;padding:0.6rem;text-align:center;">
+              <svg viewBox="0 0 80 50" style="width:100%;max-width:80px;" xmlns="http://www.w3.org/2000/svg">
+                <rect x="5" y="5" width="70" height="40" rx="4" fill="none" stroke="#b45309" stroke-width="1.5"/>
+                <circle cx="25" cy="25" r="8" fill="#fde68a"/>
+                <polygon points="40,38 55,18 70,38" fill="#b45309" opacity="0.5"/>
+              </svg>
+            </div>
+          </div>
           <!-- Step 4 -->
-          <circle cx="735" cy="70" r="36" fill="#0f172a" stroke="#0f172a" stroke-width="3"/>
-          <text x="735" y="64" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="22" font-weight="700" fill="#f1f5f9">G</text>
-          <text x="735" y="82" text-anchor="middle" font-size="8" fill="#94a3b8">GitHub</text>
-          <text x="735" y="125" text-anchor="middle" font-size="14" font-weight="600" fill="#0f172a">发布上线</text>
-          <text x="735" y="145" text-anchor="middle" font-size="11" fill="#64748b">30秒全球可访问</text>
-          <!-- 箭头 -->
-          <polygon points="210,64 220,70 210,76" fill="#c41e3a" opacity="0.6"/>
-          <polygon points="400,64 410,70 400,76" fill="#0369a1" opacity="0.6"/>
-          <polygon points="590,64 600,70 590,76" fill="#b45309" opacity="0.6"/>
-        </svg>
-        <p class="section-lead" style="text-align:center;margin-top:2.5rem;">发现问题？改一下，再发布——30秒更新，不用重新发给所有人</p>
+          <div style="border-radius:14px;border:2px solid #0f172a;padding:1.5rem 1.2rem;text-align:center;background:linear-gradient(180deg,#f1f5f9,#fff);">
+            <span style="display:inline-block;width:48px;height:48px;line-height:48px;border-radius:50%;background:#0f172a;color:#fff;font-family:var(--mono);font-size:1.3rem;font-weight:700;">G</span>
+            <h3 style="font-size:1rem;margin:0.8rem 0 0.3rem;">发布上线</h3>
+            <p style="font-size:0.8rem;color:#64748b;margin:0 0 0.8rem;">Push 到 GitHub，自动获得一个网址</p>
+            <div style="background:#f8fafc;border-radius:8px;padding:0.6rem;font-family:var(--mono);font-size:0.55rem;color:#16a34a;text-align:center;">
+              &#10003; 已发布<br/>
+              <span style="color:#64748b;">your-name.github.io</span>
+            </div>
+          </div>
+        </div>
+        <p class="section-lead" style="text-align:center;margin-top:2rem;">每次修改都自动更新，不用重新发文件给任何人</p>
       </div>
     </section>
 
@@ -713,6 +719,13 @@
               <span style="width:32px;height:32px;border-radius:50%;background:#f0fdf4;border:2px solid #bbf7d0;display:flex;align-items:center;justify-content:center;color:#16a34a;font-size:0.9rem;font-weight:700;flex-shrink:0;">&#10003;</span>
               <span style="color:#334155;font-size:1.05rem;">7×24 在线，永不过期，替你打工</span>
             </div>
+          </div>
+          <!-- 底部优势标签 -->
+          <div style="display:flex;gap:0.6rem;margin-top:2rem;flex-wrap:wrap;">
+            <span style="padding:0.3rem 0.8rem;background:#dcfce7;border-radius:20px;font-size:0.7rem;color:#166534;font-weight:500;">图文视频全支持</span>
+            <span style="padding:0.3rem 0.8rem;background:#dbeafe;border-radius:20px;font-size:0.7rem;color:#1e40af;font-weight:500;">任何设备通吃</span>
+            <span style="padding:0.3rem 0.8rem;background:#fef3c7;border-radius:20px;font-size:0.7rem;color:#92400e;font-weight:500;">可被搜索引擎收录</span>
+            <span style="padding:0.3rem 0.8rem;background:#f3e8ff;border-radius:20px;font-size:0.7rem;color:#6b21a8;font-weight:500;">持续沉淀作品集</span>
           </div>
         </div>
       </div>
