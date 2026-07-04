@@ -16,7 +16,7 @@
   --black: #0f172a;
   --mono: "IBM Plex Mono", "SF Mono", Consolas, monospace;
   --sans: "IBM Plex Sans", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
-  --slide-count: 16;
+  --slide-count: 15;
 }
 
 * {
@@ -110,8 +110,8 @@ body {
 
 .slide-inner.split {
   display: grid;
-  grid-template-columns: 1.35fr 0.65fr;
-  gap: 4rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
   align-items: center;
 }
 
@@ -201,7 +201,7 @@ p.lead {
 
 .section-lead {
   font-size: 1.25rem;
-  max-width: 52ch;
+  max-width: 72ch;
 }
 
 /* Cover */
@@ -995,7 +995,7 @@ code {
 }
 
 .panel.source code {
-  color: #e2e8f0;
+  color: inherit;
 }
 
 /* Preview panel - light */

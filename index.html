@@ -11,7 +11,7 @@
 </head>
 <body>
   <div class="progress-bar" id="progressBar"></div>
-  <div class="page-counter" id="pageCounter">01 / 16</div>
+  <div class="page-counter" id="pageCounter">01 / 15</div>
   <div class="keyboard-hint"><kbd>←</kbd> <kbd>→</kbd> 翻页</div>
 
   <button class="nav-btn prev" id="prevBtn" aria-label="上一页">
@@ -115,92 +115,54 @@
       </div>
     </section>
 
-    <!-- 03 One Knife -->
-    <section class="slide slide-overview" data-index="2">
-      <div class="slide-inner">
-        <div class="section-header centered">
-          <p class="eyebrow">核心观点</p>
-          <h2>三片功能刃，一个刀柄</h2>
-          <p class="section-lead">你不需要成为程序员——你只需要认识这把刀上有哪几片刃，就能指挥 AI 帮你削出想要的形状</p>
-        </div>
-        <div class="system-diagram">
-          <div class="system-center">
-            <span class="system-label">被看见</span>
-            <span class="system-sub">一个网址</span>
-          </div>
-          <div class="system-edges" aria-hidden="true">
-            <svg viewBox="0 0 800 360" xmlns="http://www.w3.org/2000/svg">
-              <line x1="400" y1="180" x2="170" y2="80" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="6 4" />
-              <line x1="400" y1="180" x2="170" y2="280" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="6 4" />
-              <line x1="400" y1="180" x2="630" y2="80" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="6 4" />
-              <line x1="400" y1="180" x2="630" y2="280" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="6 4" />
-              <circle cx="170" cy="80" r="6" fill="#c41e3a" />
-              <circle cx="170" cy="280" r="6" fill="#0369a1" />
-              <circle cx="630" cy="80" r="6" fill="#b45309" />
-              <circle cx="630" cy="280" r="6" fill="#0f172a" />
-            </svg>
-          </div>
-          <div class="system-nodes">
-            <div class="system-node" data-tool="markdown">
-              <span class="node-num">结构之刃</span>
-              <h3>Markdown</h3>
-              <p>定义骨架</p>
-            </div>
-            <div class="system-node" data-tool="html">
-              <span class="node-num">呈现之刃</span>
-              <h3>HTML</h3>
-              <p>塑造形态</p>
-            </div>
-            <div class="system-node" data-tool="svg">
-              <span class="node-num">图形之刃</span>
-              <h3>SVG</h3>
-              <p>绘制视觉</p>
-            </div>
-            <div class="system-node" data-tool="github">
-              <span class="node-num">刀柄</span>
-              <h3>GitHub</h3>
-              <p>握持与交付</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 04 Old Tools -->
-    <section class="slide slide-timeline" data-index="3">
-      <div class="slide-inner">
-        <div class="section-header centered">
-          <h2>老工具，新锋利</h2>
-          <p class="section-lead">它们诞生于 AI 时代之前，却在今天被重新激活</p>
-        </div>
-        <div class="timeline">
-          <div class="timeline-item">
-            <span class="year">1993</span>
-            <span class="tool">HTML</span>
-            <span class="note">30 年 +</span>
-          </div>
-          <div class="timeline-item">
-            <span class="year">1998</span>
-            <span class="tool">SVG</span>
-            <span class="note">25 年 +</span>
-          </div>
-          <div class="timeline-item">
-            <span class="year">2004</span>
-            <span class="tool">Markdown</span>
-            <span class="note">20 年 +</span>
-          </div>
-          <div class="timeline-item">
-            <span class="year">2008</span>
-            <span class="tool">GitHub</span>
-            <span class="note">18 年 +</span>
-          </div>
-        </div>
-        <p class="timeline-caption">它们比大部分人的职业生涯都长——稳定、可靠、不会突然倒闭或改规则</p>
+    <!-- 03 瑞士军刀 + 时间线 -->
+    <section class="slide" data-index="2">
+      <div class="slide-inner centered">
+        <p class="eyebrow">今天的工具</p>
+        <h2>三片刃 + 一个刀柄</h2>
+        <!-- SVG折线时间轴 -->
+        <svg viewBox="0 0 800 280" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:850px;margin-top:2rem;">
+          <!-- 折线路径 -->
+          <polyline points="100,180 280,120 500,80 700,40" fill="none" stroke="url(#timeline-grad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          <defs>
+            <linearGradient id="timeline-grad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#0369a1" />
+              <stop offset="35%" stop-color="#b45309" />
+              <stop offset="65%" stop-color="#c41e3a" />
+              <stop offset="100%" stop-color="#1e293b" />
+            </linearGradient>
+          </defs>
+          <!-- 节点1: 1993 HTML -->
+          <circle cx="100" cy="180" r="10" fill="#0369a1" />
+          <circle cx="100" cy="180" r="5" fill="#fff" />
+          <text x="100" y="210" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="22" font-weight="700" fill="#0369a1">1993</text>
+          <text x="100" y="232" text-anchor="middle" font-size="14" font-weight="600" fill="#0f172a">HTML</text>
+          <text x="100" y="250" text-anchor="middle" font-size="11" fill="#64748b">网页的底层语言</text>
+          <!-- 节点2: 2001 SVG -->
+          <circle cx="280" cy="120" r="10" fill="#b45309" />
+          <circle cx="280" cy="120" r="5" fill="#fff" />
+          <text x="280" y="150" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="22" font-weight="700" fill="#b45309">2001</text>
+          <text x="280" y="172" text-anchor="middle" font-size="14" font-weight="600" fill="#0f172a">SVG</text>
+          <text x="280" y="190" text-anchor="middle" font-size="11" fill="#64748b">放多大都不糊的图</text>
+          <!-- 节点3: 2004 Markdown -->
+          <circle cx="500" cy="80" r="10" fill="#c41e3a" />
+          <circle cx="500" cy="80" r="5" fill="#fff" />
+          <text x="500" y="110" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="22" font-weight="700" fill="#c41e3a">2004</text>
+          <text x="500" y="132" text-anchor="middle" font-size="14" font-weight="600" fill="#0f172a">Markdown</text>
+          <text x="500" y="150" text-anchor="middle" font-size="11" fill="#64748b">结构化的写作方式</text>
+          <!-- 节点4: 2008 GitHub -->
+          <circle cx="700" cy="40" r="10" fill="#1e293b" />
+          <circle cx="700" cy="40" r="5" fill="#fff" />
+          <text x="700" y="70" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="22" font-weight="700" fill="#1e293b">2008</text>
+          <text x="700" y="92" text-anchor="middle" font-size="14" font-weight="600" fill="#0f172a">GitHub</text>
+          <text x="700" y="110" text-anchor="middle" font-size="11" fill="#64748b">全世界的代码仓库</text>
+        </svg>
+        <p class="section-lead" style="text-align:center;margin-top:2rem;">曾经程序员专属，今天被 AI 重新激活——你只需认识它们，然后让 AI 去执行</p>
       </div>
     </section>
 
     <!-- 05 Markdown Intro -->
-    <section class="slide slide-tool" data-tool="markdown" data-index="4">
+    <section class="slide slide-tool" data-tool="markdown" data-index="3">
       <div class="slide-inner split">
         <div class="text-col">
           <div class="tool-tag" style="--tool-color: #c41e3a;">结构之刃 / Markdown</div>
@@ -234,7 +196,7 @@
     </section>
 
     <!-- 06 Markdown Source -->
-    <section class="slide slide-comparison" data-index="5">
+    <section class="slide slide-comparison" data-index="4">
       <div class="slide-inner">
         <div class="section-header centered">
           <div class="tool-tag" style="--tool-color: #c41e3a;">结构之刃 / Markdown</div>
@@ -260,7 +222,7 @@
 ## 往期学员评价
 > “终于知道怎么拍出好看的产品图了！”
 
-[👉 立即报名](https://example.com)</code></pre>
+[→ 立即报名](https://example.com)</code></pre>
           </div>
           <div class="panel preview">
             <div class="panel-header">
@@ -280,7 +242,7 @@
                 <li style="font-size:0.8rem;line-height:1.5;">朋友圈视觉体系搭建</li>
               </ol>
               <blockquote style="margin:0.5rem 0;padding:0.4rem 0.8rem;border-left:3px solid var(--cta);font-size:0.75rem;color:var(--text-secondary);font-style:italic;">“终于知道怎么拍出好看的产品图了！”</blockquote>
-              <a href="#" style="display:inline-block;margin-top:0.5rem;padding:0.4rem 1rem;background:var(--cta);color:#fff;border-radius:6px;font-size:0.8rem;font-weight:600;text-decoration:none;">👉 立即报名</a>
+              <a href="#" style="display:inline-block;margin-top:0.5rem;padding:0.4rem 1rem;background:var(--cta);color:#fff;border-radius:6px;font-size:0.8rem;font-weight:600;text-decoration:none;">→ 立即报名</a>
             </div>
           </div>
         </div>
@@ -288,62 +250,102 @@
     </section>
 
     <!-- 07 Markdown AI Native -->
-    <section class="slide slide-tool" data-tool="markdown" data-index="6">
+    <section class="slide slide-tool" data-tool="markdown" data-index="5">
       <div class="slide-inner">
         <div class="section-header centered">
           <div class="tool-tag" style="--tool-color: #c41e3a;">结构之刃 / Markdown</div>
           <h2>为什么所有 AI 都在用 Markdown？</h2>
         </div>
-        <div class="point-flow">
-          <div class="point-step">
-            <span class="point-num">01</span>
-            <h3>AI 说话就用它</h3>
-            <p>你让 ChatGPT 写个方案，它给你的回答天然就是 Markdown 格式</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2rem;max-width:900px;margin-left:auto;margin-right:auto;">
+          <!-- 左上：AI回复示例 -->
+          <div style="background:#1e293b;border-radius:10px;padding:1rem;">
+            <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.6rem;">
+              <span style="font-size:0.7rem;color:#94a3b8;font-family:var(--mono);">ChatGPT 回复</span>
+            </div>
+            <div style="font-family:var(--mono);font-size:0.7rem;line-height:1.6;color:#e2e8f0;">
+              <span style="color:#c41e3a;"># 商业计划书</span><br/>
+              <span style="color:#7dd3fc;">## 目标客户</span><br/>
+              <span>- 25-35岁女性创业者</span><br/>
+              <span style="color:#7dd3fc;">## 解决方案</span><br/>
+              <span>1. 个人网站搭建</span><br/>
+              <span>2. SEO 基础优化</span>
+            </div>
+            <p style="font-size:0.65rem;color:#64748b;margin-top:0.5rem;">AI 说话天然就是 Markdown</p>
           </div>
-          <div class="point-arrow">→</div>
-          <div class="point-step">
-            <span class="point-num">02</span>
-            <h3>你指挥 AI 也用它</h3>
-            <p>好的提示词、Agent 配置、Skill 说明书——全都是 Markdown 写的</p>
+          <!-- 右上：Skill配置文件示例 -->
+          <div style="background:#1e293b;border-radius:10px;padding:1rem;">
+            <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.6rem;">
+              <span style="font-size:0.7rem;color:#94a3b8;font-family:var(--mono);">SKILL.md</span>
+            </div>
+            <div style="font-family:var(--mono);font-size:0.7rem;line-height:1.6;color:#e2e8f0;">
+              <span style="color:#c41e3a;">---</span><br/>
+              <span style="color:#7dd3fc;">name:</span> idea-to-github-page<br/>
+              <span style="color:#c41e3a;">---</span><br/>
+              <span style="color:#c41e3a;"># 使用步骤</span><br/>
+              <span>1. Fork 项目</span><br/>
+              <span>2. 描述你的想法</span><br/>
+              <span>3. 自动部署</span>
+            </div>
+            <p style="font-size:0.65rem;color:#64748b;margin-top:0.5rem;">AI 工具的配置文件也是 Markdown</p>
           </div>
-          <div class="point-arrow">→</div>
-          <div class="point-step">
-            <span class="point-num">03</span>
-            <h3>写一次，到处用</h3>
-            <p>同一份 Markdown 可以变成网页、PDF、PPT、公众号文章——不用重新排版</p>
+          <!-- 左下：提示词示例 -->
+          <div style="background:#1e293b;border-radius:10px;padding:1rem;">
+            <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.6rem;">
+              <span style="font-size:0.7rem;color:#94a3b8;font-family:var(--mono);">system.md 提示词</span>
+            </div>
+            <div style="font-family:var(--mono);font-size:0.7rem;line-height:1.6;color:#e2e8f0;">
+              <span style="color:#c41e3a;"># 角色</span><br/>
+              <span>你是一个营销文案专家</span><br/>
+              <span style="color:#c41e3a;"># 规则</span><br/>
+              <span>- 用口语化表达</span><br/>
+              <span>- **重点**加粗标注</span><br/>
+              <span>- 每段不超过3句</span>
+            </div>
+            <p style="font-size:0.65rem;color:#64748b;margin-top:0.5rem;">指挥 AI 的提示词也是 Markdown</p>
+          </div>
+          <!-- 右下：输出格式 -->
+          <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:1rem;">
+            <div style="font-size:0.75rem;font-weight:600;color:var(--text);margin-bottom:0.6rem;">写一次，到处能用</div>
+            <div style="display:flex;flex-direction:column;gap:0.4rem;">
+              <span style="font-size:0.7rem;color:var(--text-secondary);">→ 渲染成网页</span>
+              <span style="font-size:0.7rem;color:var(--text-secondary);">→ 导出成 PDF</span>
+              <span style="font-size:0.7rem;color:var(--text-secondary);">→ 发到公众号</span>
+              <span style="font-size:0.7rem;color:var(--text-secondary);">→ 做成幻灯片（就像这个）</span>
+            </div>
+            <p style="font-size:0.65rem;color:#64748b;margin-top:0.5rem;">同一份内容，不用重新排版</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- 08 HTML Source -->
-    <section class="slide slide-comparison" data-index="7">
+    <section class="slide slide-comparison" data-index="6">
       <div class="slide-inner">
         <div class="section-header centered">
           <div class="tool-tag" style="--tool-color: #0369a1;">呈现之刃 / HTML</div>
           <h2>HTML：给内容穿上衣服</h2>
-          <p class="section-lead">Markdown 是骨架，HTML 是皮肤——有了它，文字才能变成别人手机上打开的那个页面</p>
+          <p class="section-lead">Markdown 是骨架，HTML 是皮肤——文字变成网页的关键一步</p>
         </div>
         <div class="comparison">
-          <div class="panel source">
-            <div class="panel-header">
-              <span class="panel-label">源码</span>
+          <div class="panel source" style="background:#fafafa;border-color:#e2e8f0;color:#1e293b;">
+            <div class="panel-header" style="background:#f1f5f9;border-color:#e2e8f0;">
+              <span class="panel-label" style="color:#64748b;">源码</span>
             </div>
-            <pre><code>&lt;div class="hero"&gt;
-  &lt;h1&gt;用 AI 拍出爵士感照片&lt;/h1&gt;
-  &lt;p&gt;3天小白变达人&lt;/p&gt;
-  &lt;img src="demo.jpg"&gt;
-&lt;/div&gt;
+            <pre style="color:#1e293b;"><code><span style="color:#8b2252;">&lt;div</span> <span style="color:#0550ae;">class=</span><span style="color:#953800;">"hero"</span><span style="color:#8b2252;">&gt;</span>
+  <span style="color:#8b2252;">&lt;h1&gt;</span>用 AI 拍出爵士感照片<span style="color:#8b2252;">&lt;/h1&gt;</span>
+  <span style="color:#8b2252;">&lt;p&gt;</span>3天小白变达人<span style="color:#8b2252;">&lt;/p&gt;</span>
+  <span style="color:#8b2252;">&lt;img</span> <span style="color:#0550ae;">src=</span><span style="color:#953800;">"demo.jpg"</span><span style="color:#8b2252;">&gt;</span>
+<span style="color:#8b2252;">&lt;/div&gt;</span>
 
-&lt;div class="features"&gt;
-  &lt;div class="card"&gt;📱 手机就能拍&lt;/div&gt;
-  &lt;div class="card"&gt;🤖 AI一键修&lt;/div&gt;
-  &lt;div class="card"&gt;💰 零成本&lt;/div&gt;
-&lt;/div&gt;
+<span style="color:#8b2252;">&lt;div</span> <span style="color:#0550ae;">class=</span><span style="color:#953800;">"features"</span><span style="color:#8b2252;">&gt;</span>
+  <span style="color:#8b2252;">&lt;div</span> <span style="color:#0550ae;">class=</span><span style="color:#953800;">"card"</span><span style="color:#8b2252;">&gt;</span>手机就能拍<span style="color:#8b2252;">&lt;/div&gt;</span>
+  <span style="color:#8b2252;">&lt;div</span> <span style="color:#0550ae;">class=</span><span style="color:#953800;">"card"</span><span style="color:#8b2252;">&gt;</span>AI一键修<span style="color:#8b2252;">&lt;/div&gt;</span>
+  <span style="color:#8b2252;">&lt;div</span> <span style="color:#0550ae;">class=</span><span style="color:#953800;">"card"</span><span style="color:#8b2252;">&gt;</span>零成本<span style="color:#8b2252;">&lt;/div&gt;</span>
+<span style="color:#8b2252;">&lt;/div&gt;</span>
 
-&lt;button class="cta"&gt;
+<span style="color:#8b2252;">&lt;button</span> <span style="color:#0550ae;">class=</span><span style="color:#953800;">"cta"</span><span style="color:#8b2252;">&gt;</span>
   立即加入 ¥199
-&lt;/button&gt;</code></pre>
+<span style="color:#8b2252;">&lt;/button&gt;</span></code></pre>
           </div>
           <div class="panel preview">
             <div class="panel-header">
@@ -368,48 +370,79 @@
     </section>
 
     <!-- 09 HTML Rich Media -->
-    <section class="slide slide-html-media" data-index="8">
+    <section class="slide slide-html-media" data-index="7">
       <div class="slide-inner">
         <div class="section-header centered">
           <div class="tool-tag" style="--tool-color: #0369a1;">呈现之刃 / HTML</div>
           <h2>一个网页能装下所有东西</h2>
-          <p class="section-lead">文字、图片、视频、按钮、表单——你想让客户看到的一切，都能塞进一个链接里</p>
+          <p class="section-lead">你想展示的一切，都能塞进一个链接里</p>
         </div>
-        <div class="media-grid">
-          <div class="media-card">
-            <span class="media-icon">T</span>
-            <h3>文字与排版</h3>
-            <p>标题、段落、列表、引用，层级清晰</p>
+        <!-- 左右分栏：左边能力列表 + 右边仿网页 -->
+        <div style="display:grid;grid-template-columns:1fr 1.4fr;gap:2rem;margin-top:1.5rem;align-items:start;">
+          <!-- 左侧：HTML能承载的内容类型 -->
+          <div style="display:flex;flex-direction:column;gap:0.7rem;">
+            <div style="display:flex;align-items:center;gap:0.7rem;padding:0.7rem 1rem;background:#eff6ff;border-radius:8px;border-left:3px solid #3b82f6;">
+              <span style="font-size:1.2rem;">T</span>
+              <div><span style="font-size:0.8rem;font-weight:600;display:block;">文字排版</span><span style="font-size:0.65rem;color:var(--text-muted);">标题、段落、列表、引用</span></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:0.7rem;padding:0.7rem 1rem;background:#f0fdf4;border-radius:8px;border-left:3px solid #22c55e;">
+              <span style="font-size:1.2rem;">&#9638;</span>
+              <div><span style="font-size:0.8rem;font-weight:600;display:block;">图片与配色</span><span style="font-size:0.65rem;color:var(--text-muted);">产品图、Banner、品牌色</span></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:0.7rem;padding:0.7rem 1rem;background:#fef3c7;border-radius:8px;border-left:3px solid #f59e0b;">
+              <span style="font-size:1.2rem;">&#9654;</span>
+              <div><span style="font-size:0.8rem;font-weight:600;display:block;">视频嵌入</span><span style="font-size:0.65rem;color:var(--text-muted);">YouTube / B站 / 自托管</span></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:0.7rem;padding:0.7rem 1rem;background:#fce7f3;border-radius:8px;border-left:3px solid #ec4899;">
+              <span style="font-size:1.2rem;">&#9998;</span>
+              <div><span style="font-size:0.8rem;font-weight:600;display:block;">表单交互</span><span style="font-size:0.65rem;color:var(--text-muted);">报名、预约、问卷收集</span></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:0.7rem;padding:0.7rem 1rem;background:#f5f3ff;border-radius:8px;border-left:3px solid #8b5cf6;">
+              <span style="font-size:1.2rem;">&#9775;</span>
+              <div><span style="font-size:0.8rem;font-weight:600;display:block;">动画与特效</span><span style="font-size:0.65rem;color:var(--text-muted);">滚动渐入、悬停放大、计数器</span></div>
+            </div>
           </div>
-          <div class="media-card">
-            <span class="media-icon">I</span>
-            <h3>图片与色彩</h3>
-            <p>品牌色、配图、图标，视觉统一</p>
-          </div>
-          <div class="media-card">
-            <span class="media-icon">V</span>
-            <h3>音视频</h3>
-            <p>嵌入演示视频、播客、访谈片段</p>
-          </div>
-          <div class="media-card">
-            <span class="media-icon">⌥</span>
-            <h3>交互</h3>
-            <p>按钮、表单、折叠、滑动，读者可以参与</p>
-          </div>
-        </div>
-        <div class="media-browser">
+          <!-- 右侧：仿真网页预览 -->
           <div class="browser-mockup large">
             <div class="browser-header">
               <span></span><span></span><span></span>
-              <div class="browser-url">my-brand.github.io</div>
+              <div class="browser-url">my-course.github.io</div>
             </div>
-            <div class="browser-body media-body">
-              <h4>我的 AI 商业课</h4>
-              <div class="media-blocks">
-                <div class="media-block text">📝 课程介绍</div>
-                <div class="media-block image">🎨 学员作品</div>
-                <div class="media-block video">🎬 试看片段</div>
-                <div class="media-block cta">🔥 立即报名 ¥199</div>
+            <div class="browser-body" style="padding:0;overflow:hidden;">
+              <!-- Hero区 -->
+              <div style="background:linear-gradient(135deg,#1e3a5f,#0f172a);padding:1rem 1.2rem;text-align:center;">
+                <p style="font-size:0.6rem;color:#94a3b8;margin:0 0 0.2rem;">AI 摄影实战课</p>
+                <h4 style="font-size:0.95rem;color:#fff;margin:0 0 0.4rem;">3天拍出爵士感照片</h4>
+                <!-- 仿图片区 -->
+                <div style="display:flex;gap:0.3rem;justify-content:center;">
+                  <div style="width:60px;height:40px;border-radius:4px;background:linear-gradient(135deg,#f97316,#f59e0b);"></div>
+                  <div style="width:60px;height:40px;border-radius:4px;background:linear-gradient(135deg,#06b6d4,#3b82f6);"></div>
+                  <div style="width:60px;height:40px;border-radius:4px;background:linear-gradient(135deg,#8b5cf6,#ec4899);"></div>
+                </div>
+              </div>
+              <!-- 视频区 -->
+              <div style="padding:0.7rem 1rem;background:#f8fafc;border-bottom:1px solid #e2e8f0;">
+                <div style="position:relative;background:#000;border-radius:6px;height:55px;display:flex;align-items:center;justify-content:center;">
+                  <div style="width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,0.9);display:flex;align-items:center;justify-content:center;">
+                    <span style="font-size:0.7rem;margin-left:2px;">&#9654;</span>
+                  </div>
+                  <span style="position:absolute;bottom:4px;right:6px;font-size:0.55rem;color:#94a3b8;">02:34</span>
+                  <!-- 进度条 -->
+                  <div style="position:absolute;bottom:0;left:0;right:0;height:3px;background:#334155;border-radius:0 0 6px 6px;">
+                    <div style="width:35%;height:100%;background:#c41e3a;border-radius:0 0 0 6px;"></div>
+                  </div>
+                </div>
+                <p style="font-size:0.6rem;color:var(--text-muted);margin:0.3rem 0 0;text-align:center;">↑ 嵌入视频：第一课免费试看</p>
+              </div>
+              <!-- 表单区 -->
+              <div style="padding:0.7rem 1rem;">
+                <div style="display:flex;gap:0.4rem;margin-bottom:0.5rem;">
+                  <input type="text" placeholder="你的名字" style="flex:1;padding:0.3rem 0.5rem;border:1px solid #e2e8f0;border-radius:5px;font-size:0.6rem;outline:none;" readonly />
+                  <input type="text" placeholder="微信号" style="flex:1;padding:0.3rem 0.5rem;border:1px solid #e2e8f0;border-radius:5px;font-size:0.6rem;outline:none;" readonly />
+                </div>
+                <div style="text-align:center;">
+                  <span style="display:inline-block;padding:0.35rem 1.2rem;background:linear-gradient(135deg,#c41e3a,#e11d48);color:#fff;border-radius:6px;font-size:0.65rem;font-weight:600;">立即报名 ¥199</span>
+                </div>
               </div>
             </div>
           </div>
@@ -418,7 +451,7 @@
     </section>
 
     <!-- 10 SVG Intro -->
-    <section class="slide slide-tool" data-tool="svg" data-index="9">
+    <section class="slide slide-tool" data-tool="svg" data-index="8">
       <div class="slide-inner split reverse">
         <div class="visual-col">
           <svg viewBox="0 0 420 320" xmlns="http://www.w3.org/2000/svg">
@@ -452,31 +485,31 @@
     </section>
 
     <!-- 11 SVG Source -->
-    <section class="slide slide-comparison" data-index="10">
+    <section class="slide slide-comparison" data-index="9">
       <div class="slide-inner">
         <div class="section-header centered">
           <div class="tool-tag" style="--tool-color: #b45309;">图形之刃 / SVG</div>
           <h2>SVG：AI 画图的「交付格式」</h2>
-          <p class="section-lead">你不用看懂这些代码——你只需知道这段代码就是一张图，改个文字或颜色，AI 三秒搞定</p>
+          <p class="section-lead">你不用看懂代码——这段代码就是一张图，改文字改颜色 AI 三秒搞定</p>
         </div>
         <div class="comparison">
-          <div class="panel source">
-            <div class="panel-header">
-              <span class="panel-label">源码</span>
+          <div class="panel source" style="background:#fdf6e3;border-color:#eee8d5;color:#657b83;">
+            <div class="panel-header" style="background:#eee8d5;border-color:#ddd6c1;">
+              <span class="panel-label" style="color:#93a1a1;">源码</span>
             </div>
-            <pre><code>&lt;svg viewBox="0 0 280 200"&gt;
-  &lt;!-- 漏斗图：客户转化路径 --&gt;
-  &lt;polygon points="40,20 240,20 200,70 80,70"
-    fill="#dbeafe" /&gt;
-  &lt;polygon points="80,75 200,75 180,125 100,125"
-    fill="#93c5fd" /&gt;
-  &lt;polygon points="100,130 180,130 165,180 115,180"
-    fill="#3b82f6" /&gt;
-  &lt;text x="140" y="50"&gt;访问 1000人&lt;/text&gt;
-  &lt;text x="140" y="105"&gt;咨询 200人&lt;/text&gt;
-  &lt;text x="140" y="160" fill="#fff"&gt;
-    成交 30人&lt;/text&gt;
-&lt;/svg&gt;</code></pre>
+            <pre style="color:#657b83;"><code><span style="color:#2aa198;">&lt;svg</span> <span style="color:#268bd2;">viewBox=</span><span style="color:#cb4b16;">"0 0 280 200"</span><span style="color:#2aa198;">&gt;</span>
+  <span style="color:#93a1a1;">&lt;!-- 漏斗图：客户转化路径 --&gt;</span>
+  <span style="color:#2aa198;">&lt;polygon</span> <span style="color:#268bd2;">points=</span><span style="color:#cb4b16;">"40,20 240,20 200,70 80,70"</span>
+    <span style="color:#268bd2;">fill=</span><span style="color:#859900;">"#dbeafe"</span> <span style="color:#2aa198;">/&gt;</span>
+  <span style="color:#2aa198;">&lt;polygon</span> <span style="color:#268bd2;">points=</span><span style="color:#cb4b16;">"80,75 200,75 180,125 100,125"</span>
+    <span style="color:#268bd2;">fill=</span><span style="color:#859900;">"#93c5fd"</span> <span style="color:#2aa198;">/&gt;</span>
+  <span style="color:#2aa198;">&lt;polygon</span> <span style="color:#268bd2;">points=</span><span style="color:#cb4b16;">"100,130 180,130 165,180 115,180"</span>
+    <span style="color:#268bd2;">fill=</span><span style="color:#859900;">"#3b82f6"</span> <span style="color:#2aa198;">/&gt;</span>
+  <span style="color:#2aa198;">&lt;text</span> <span style="color:#268bd2;">x=</span><span style="color:#cb4b16;">"140"</span> <span style="color:#268bd2;">y=</span><span style="color:#cb4b16;">"50"</span><span style="color:#2aa198;">&gt;</span>访问 1000人<span style="color:#2aa198;">&lt;/text&gt;</span>
+  <span style="color:#2aa198;">&lt;text</span> <span style="color:#268bd2;">x=</span><span style="color:#cb4b16;">"140"</span> <span style="color:#268bd2;">y=</span><span style="color:#cb4b16;">"105"</span><span style="color:#2aa198;">&gt;</span>咨询 200人<span style="color:#2aa198;">&lt;/text&gt;</span>
+  <span style="color:#2aa198;">&lt;text</span> <span style="color:#268bd2;">x=</span><span style="color:#cb4b16;">"140"</span> <span style="color:#268bd2;">y=</span><span style="color:#cb4b16;">"160"</span> <span style="color:#268bd2;">fill=</span><span style="color:#859900;">"#fff"</span><span style="color:#2aa198;">&gt;</span>
+    成交 30人<span style="color:#2aa198;">&lt;/text&gt;</span>
+<span style="color:#2aa198;">&lt;/svg&gt;</span></code></pre>
           </div>
           <div class="panel preview">
             <div class="panel-header">
@@ -506,7 +539,7 @@
     </section>
 
     <!-- 12 GitHub Intro -->
-    <section class="slide slide-tool" data-tool="github" data-index="11">
+    <section class="slide slide-tool" data-tool="github" data-index="10">
       <div class="slide-inner split">
         <div class="text-col">
           <div class="tool-tag" style="--tool-color: #0f172a;">刀柄 / GitHub</div>
@@ -585,7 +618,7 @@
     </section>
 
     <!-- 13 Workflow -->
-    <section class="slide slide-workflow" data-index="12">
+    <section class="slide slide-workflow" data-index="11">
       <div class="slide-inner">
         <div class="section-header centered">
           <h2>从想法到网址，四步搞定</h2>
@@ -620,7 +653,7 @@
     </section>
 
     <!-- 14 Before After -->
-    <section class="slide slide-before-after" data-index="13">
+    <section class="slide slide-before-after" data-index="12">
       <div class="slide-inner">
         <div class="section-header centered">
           <h2>同样的内容，不同的命运</h2>
@@ -662,7 +695,7 @@
     </section>
 
     <!-- 15 URL vs PPT -->
-    <section class="slide slide-url" data-index="14">
+    <section class="slide slide-url" data-index="13">
       <div class="slide-inner centered">
         <p class="eyebrow">传播效率</p>
         <h2>一个网址胜过十次群发</h2>
@@ -692,7 +725,7 @@
     </section>
 
     <!-- 16 Closing -->
-    <section class="slide slide-end" data-index="15">
+    <section class="slide slide-end" data-index="14">
       <div class="slide-inner centered">
         <p class="eyebrow">最后一句话</p>
         <h2>先发出去，再慢慢改</h2>

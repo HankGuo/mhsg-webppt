@@ -4,7 +4,7 @@ const nextBtn = document.getElementById('nextBtn');
 const progressBar = document.getElementById('progressBar');
 const pageCounter = document.getElementById('pageCounter');
 
-const totalSlides = 16;
+const totalSlides = 15;
 let current = 0;
 let touchStartX = 0;
 let touchEndX = 0;
