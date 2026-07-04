@@ -45,18 +45,23 @@
                   <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.12" />
                 </filter>
               </defs>
-              <rect x="160" y="95" width="200" height="55" rx="10" fill="#1e293b" filter="url(#shadow)" />
-              <circle cx="185" cy="122" r="6" fill="#64748b" />
-              <circle cx="335" cy="122" r="6" fill="#64748b" />
-              <rect x="360" y="108" width="55" height="28" rx="4" fill="#0f172a" />
-              <rect x="130" y="60" width="18" height="95" rx="2" fill="#c41e3a" transform="rotate(-35 130 60)" />
-              <text x="95" y="50" font-family="IBM Plex Mono, monospace" font-size="11" font-weight="600" fill="#c41e3a" transform="rotate(-35 95 50)">Markdown</text>
-              <rect x="170" y="45" width="18" height="100" rx="2" fill="#0369a1" transform="rotate(-18 170 45)" />
-              <text x="155" y="32" font-family="IBM Plex Mono, monospace" font-size="11" font-weight="600" fill="#0369a1" transform="rotate(-18 155 32)">HTML</text>
-              <rect x="220" y="40" width="18" height="90" rx="2" fill="#b45309" />
-              <text x="212" y="28" font-family="IBM Plex Mono, monospace" font-size="11" font-weight="600" fill="#b45309">SVG</text>
-              <rect x="270" y="45" width="18" height="100" rx="2" fill="#0f172a" transform="rotate(18 270 45)" />
-              <text x="282" y="30" font-family="IBM Plex Mono, monospace" font-size="11" font-weight="600" fill="#0f172a" transform="rotate(18 282 30)">GitHub</text>
+              <!-- 刀柄：GitHub -->
+              <rect x="280" y="105" width="180" height="48" rx="10" fill="#1e293b" filter="url(#shadow)" />
+              <circle cx="310" cy="129" r="5" fill="#475569" />
+              <circle cx="430" cy="129" r="5" fill="#475569" />
+              <text x="370" y="134" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" font-weight="600" fill="#94a3b8">GitHub</text>
+              <!-- 刀刃转轴 -->
+              <circle cx="280" cy="129" r="12" fill="#334155" />
+              <circle cx="280" cy="129" r="5" fill="#1e293b" />
+              <!-- 刀刃1：Markdown（展开） -->
+              <rect x="120" y="45" width="16" height="100" rx="3" fill="#c41e3a" transform="rotate(-30 200 129)" />
+              <text x="108" y="58" font-family="IBM Plex Mono, monospace" font-size="10" font-weight="600" fill="#c41e3a" transform="rotate(-30 108 58)">Markdown</text>
+              <!-- 刀刃2：HTML（展开） -->
+              <rect x="155" y="32" width="16" height="108" rx="3" fill="#0369a1" transform="rotate(-12 220 129)" />
+              <text x="162" y="28" font-family="IBM Plex Mono, monospace" font-size="10" font-weight="600" fill="#0369a1" transform="rotate(-12 162 28)">HTML</text>
+              <!-- 刀刃3：SVG（展开） -->
+              <rect x="205" y="28" width="16" height="105" rx="3" fill="#b45309" transform="rotate(6 260 129)" />
+              <text x="235" y="22" font-family="IBM Plex Mono, monospace" font-size="10" font-weight="600" fill="#b45309" transform="rotate(6 235 22)">SVG</text>
             </svg>
           </div>
         </div>
@@ -229,7 +234,7 @@
     </section>
 
     <!-- 06 Markdown Source -->
-    <section class="slide slide-comparison markdown-layout" data-index="5">
+    <section class="slide slide-comparison" data-index="5">
       <div class="slide-inner">
         <div class="section-header centered">
           <div class="tool-tag" style="--tool-color: #c41e3a;">结构之刃 / Markdown</div>
@@ -312,7 +317,7 @@
     </section>
 
     <!-- 08 HTML Source -->
-    <section class="slide slide-comparison html-layout" data-index="7">
+    <section class="slide slide-comparison" data-index="7">
       <div class="slide-inner">
         <div class="section-header centered">
           <div class="tool-tag" style="--tool-color: #0369a1;">呈现之刃 / HTML</div>
@@ -447,7 +452,7 @@
     </section>
 
     <!-- 11 SVG Source -->
-    <section class="slide slide-comparison svg-layout" data-index="10">
+    <section class="slide slide-comparison" data-index="10">
       <div class="slide-inner">
         <div class="section-header centered">
           <div class="tool-tag" style="--tool-color: #b45309;">图形之刃 / SVG</div>
@@ -468,7 +473,7 @@
   &lt;polygon points="100,130 180,130 165,180 115,180"
     fill="#3b82f6" /&gt;
   &lt;text x="140" y="50"&gt;访问 1000人&lt;/text&gt;
-  &lt;text x="140" y="105"&gt;咨询 �0人&lt;/text&gt;
+  &lt;text x="140" y="105"&gt;咨询 200人&lt;/text&gt;
   &lt;text x="140" y="160" fill="#fff"&gt;
     成交 30人&lt;/text&gt;
 &lt;/svg&gt;</code></pre>
@@ -583,7 +588,7 @@
     <section class="slide slide-workflow" data-index="12">
       <div class="slide-inner">
         <div class="section-header centered">
-          <h2>从脑子里的想法到一个可分享的网址</h2>
+          <h2>从想法到网址，四步搞定</h2>
         </div>
         <div class="workflow">
           <div class="workflow-step" data-tool="markdown">
@@ -618,7 +623,7 @@
     <section class="slide slide-before-after" data-index="13">
       <div class="slide-inner">
         <div class="section-header centered">
-          <h2>同样的内容，换个包装，命运完全不同</h2>
+          <h2>同样的内容，不同的命运</h2>
         </div>
         <div class="before-after">
           <div class="ba-panel before">
@@ -660,7 +665,7 @@
     <section class="slide slide-url" data-index="14">
       <div class="slide-inner centered">
         <p class="eyebrow">传播效率</p>
-        <h2>一个网址，胜过十次群发文件</h2>
+        <h2>一个网址胜过十次群发</h2>
         <div class="url-bento">
           <div class="url-item wide">
             <span class="url-check">✓</span>

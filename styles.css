@@ -96,7 +96,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem 7rem;
+  padding: 3.5rem 5rem;
   position: relative;
   overflow: hidden;
 }
@@ -893,12 +893,18 @@ code {
 
 /* Comparison slide - source vs rendered with fade-in */
 .slide-comparison .section-header {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .slide-comparison h2 {
-  margin-bottom: 0.75rem;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  margin-bottom: 0.5rem;
   max-width: 900px;
+}
+
+.slide-comparison .section-lead {
+  font-size: 1rem;
+  margin-bottom: 0;
 }
 
 .slide-comparison .slide-inner {
@@ -911,9 +917,12 @@ code {
 .comparison {
   position: relative;
   width: 100%;
-  max-width: 1000px;
-  height: 420px;
+  max-width: 1100px;
+  height: auto;
   margin: 0 auto;
+  display: flex;
+  align-items: stretch;
+  gap: 1.5rem;
 }
 
 .panel {
@@ -1006,8 +1015,8 @@ code {
 
 .preview-body {
   padding: 1.25rem;
-  height: calc(100% - 45px);
-  overflow: auto;
+  height: auto;
+  overflow: visible;
 }
 
 .preview-body h4 {
@@ -1065,62 +1074,31 @@ code {
   height: 100%;
 }
 
-/* Markdown layout: side-by-side */
-.markdown-layout .comparison {
-  display: flex;
-  align-items: stretch;
-  gap: 1.5rem;
-}
-
-.markdown-layout .panel {
+/* All comparison layouts: unified side-by-side */
+.comparison .panel {
   position: relative;
   flex: 1;
-  height: 100%;
+  min-width: 0;
+  max-height: 420px;
 }
 
-/* HTML layout: stacked vertical */
-.html-layout .comparison {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
+.comparison .panel.source {
+  flex: 1;
 }
 
-.html-layout .panel {
-  position: relative;
+.comparison .panel.preview {
+  flex: 1;
 }
 
-.html-layout .panel.source {
-  width: 76%;
-  height: 38%;
+.comparison .panel pre {
+  height: auto;
+  max-height: 360px;
+  overflow: hidden;
 }
 
-.html-layout .panel.preview {
-  width: 86%;
-  height: 54%;
-}
-
-/* SVG layout: diagonal offset */
-.svg-layout .comparison {
-  position: relative;
-}
-
-.svg-layout .panel {
-  position: absolute;
-}
-
-.svg-layout .panel.preview {
-  top: 2%;
-  left: 0;
-  width: 58%;
-  height: 76%;
-}
-
-.svg-layout .panel.source {
-  bottom: 2%;
-  right: 0;
-  width: 48%;
-  height: 74%;
+.comparison .panel .preview-body {
+  max-height: 360px;
+  overflow: hidden;
 }
 
 /* Quote card */
